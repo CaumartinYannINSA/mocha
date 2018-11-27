@@ -2,6 +2,7 @@
   "dependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-html-build": "^0.7.1",
     "mocha": "^5.2.0"
   }

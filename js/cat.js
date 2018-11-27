@@ -4,5 +4,6 @@ module.exports = function(s)
     {
         throw new Error('not a string');
     }
+
     return "Bonjour " + s;
 }

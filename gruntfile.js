@@ -19,12 +19,19 @@ module.exports = function(grunt) {
                 src: 'html/index.html',
                 dest: 'dist/',
             }
+    },
+    watch: {
+      js: {
+        files: ['js/*.js'],
+        tasks: ['uglify']
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-html-build');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', ['uglify', 'htmlbuild']);
